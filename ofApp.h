@@ -2,6 +2,10 @@
 
 #include "ofMain.h"
 #include <cstdlib>
+#include "ofxFft.h"
+#include "Planet.h"
+#include "Dashboard.h"
+#include "Laser.h"
 
 #define _USE_MATH_DEFINES
 #include <math.h>
@@ -15,7 +19,6 @@
 #define MY_BUFFERSIZE    512              // number of frames in a buffer
 #define MY_NBUFFERS      2                // number of buffers latency
 #define MY_PIE           3.14159265358979 // for convenience
-
 
 //-----------------------------------------------------------------------------
 // My application
@@ -43,6 +46,18 @@ public:
     void audioIn(float * input, int bufferSize, int nChannels);
 
 private:
+	//ofSoundPlayer soundPlayer;
 	vector<ofPolyline*> rays;
-	int speed; // we set mach 1 = 30 as standard
+	vector<Planet*> planets;
+	Dashboard dashboard;
+	Laser* lasers[2];
+	int speed;
+
+	// copied from ofxBokeh:
+
+	// Our sound stream object
+	ofSoundStream soundStream;
+	vector<float> left, right;
+	ofxFft* fft;
+	float centroid;
 };
