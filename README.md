@@ -1,5 +1,5 @@
 # MUSIC-256A-HW4
 
-This project simulates a flight through space. Stars zoom by to give the effect of motion, and the user can press the up and down arrow keys to change the velocity. Later, there will be implemented audio features like hearing the Doppler effect as you fly past various objects.
+In this project, you play a villain flying through space, destroying planets as you pass by them. However, you can only destroy planets that are the same color as your laser, and you change this color by singing different pitches into your microphone. As planets fly by you, hear the doppler shift of their screams!
 
 Created as Homework 4 for MUSIC 256A at Stanford CCRMA. Created using VisualStudio and openFrameworks.
