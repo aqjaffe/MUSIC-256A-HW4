@@ -24,12 +24,12 @@
 // My application
 //-----------------------------------------------------------------------------
 class ofApp : public ofBaseApp{
-
+    
 public:
     void setup();
     void update();
     void draw();
-
+    
     void keyPressed(int key);
     void keyReleased(int key);
     void mouseMoved(int x, int y );
@@ -41,23 +41,18 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
-
+    
     // Get buffer samples
     void audioIn(float * input, int bufferSize, int nChannels);
-
+    
 private:
-	//ofSoundPlayer soundPlayer;
-	vector<ofPolyline*> rays;
-	vector<Planet*> planets;
-	Dashboard dashboard;
-	Laser* lasers[2];
-	int speed;
-
-	// copied from ofxBokeh:
-
-	// Our sound stream object
-	ofSoundStream soundStream;
-	vector<float> left, right;
-	ofxFft* fft;
-	float centroid;
+    vector<ofPolyline*> rays;
+    vector<Planet*> planets;
+    Dashboard dashboard;
+    Laser* lasers[2];
+    int speed;
+    ofSoundStream soundStream;
+    vector<float> left, right;
+    ofxFft* fft;
+    float centroid;
 };
