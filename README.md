@@ -1,5 +1,7 @@
 # MUSIC-256A-HW4
 
-In this project, you play a villain flying through space, destroying planets as you pass by them. However, you can only destroy planets that are the same color as your laser, and you change this color by singing different pitches into your microphone. As planets fly by you, hear the doppler shift of their screams!
+Fly through space while destroying planets with your pitch-controlled laser beams! Destroy as many planets as you can, but note that you can only destroy planets with a laser of the same color... try singing and whistling different pitches as planets of different colors fly by you! Use the arrow keys to increase or decrease your speed to make the challenge easier/harder as you wish.
 
-Created as Homework 4 for MUSIC 256A at Stanford CCRMA. Created using VisualStudio and openFrameworks.
+Created as Homework 4 for MUSIC 256A at Stanford CCRMA. Created using Xcode and openFrameworks.
+
+Special thanks to Dusit Supasawat for the DS-DIGITAL typeface used on the spaceship dashboard.
